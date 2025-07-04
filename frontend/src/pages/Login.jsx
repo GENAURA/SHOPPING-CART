@@ -1,4 +1,5 @@
 import React from 'react'
+import { toast} from "react-toastify"
 import Logo from "../assets/logo.png"
 import { useNavigate } from 'react-router-dom'
 import google from '../assets/google.png'

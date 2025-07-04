@@ -20,3 +20,4 @@ function Hero({heroData,heroCount,setHeroCount}) {
 }
 
 export default Hero
+

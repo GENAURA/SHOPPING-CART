@@ -30,3 +30,4 @@ function LatestCollection() {
 }
 
 export default LatestCollection
+

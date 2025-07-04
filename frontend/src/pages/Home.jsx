@@ -6,6 +6,11 @@ import OurPolicy from '../component/OurPolicy'
 import NewLetterBox from '../component/NewLetterBox'
 import Footer from '../component/Footer'
 
+import image1 from '../assets/back1.jpg'  // Replace with your actual image names
+import image2 from '../assets/back2.jpg'
+import image3 from '../assets/back3.jpg'
+import image4 from '../assets/back4.jpg'
+
 
 function Home() {
   let heroData=[

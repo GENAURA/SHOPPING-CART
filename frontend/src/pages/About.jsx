@@ -4,6 +4,7 @@ import about from '../assets/about.jpg'
 import NewLetterBox from '../component/NewLetterBox'
 
 function About() {
+  console.log('About images path:')
   return (
     <div className=' w-[99vw] min-h-[100vh] flex items-center justify-center flex-col  bg-gradient-to-l from-[#141414] to-[#0c2025] gap-[50px] pt-[80px]'>
       <Title text1={'ABOUT'} text2={'US'}/>
