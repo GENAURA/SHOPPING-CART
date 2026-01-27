@@ -17,7 +17,7 @@ let app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
- origin:["http://localhost:5175" , "http://localhost:5173"],
+ origin:["https://shopping-cart-frontendone.onrender.com" , "http://localhost:5173"],
  credentials:true
 }))
 
@@ -34,5 +34,6 @@ app.listen(port,()=>{
     console.log("Hello From Server")
     connectDb()
 })
+
 
 
