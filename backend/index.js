@@ -19,9 +19,7 @@ app.use(cors({
   origin: [
     'http://localhost:5173',
     'http://localhost:5174',
-    'https://shopping-cart-frontendone.onrender.com',
-    'https://shopping-cart-admin.onrender.com',
-    'https://shopping-cart-black-omega.vercel.app',
+    'https://shopping-cart-71m1.vercel.app/',
   ],
   credentials: true
 }))
