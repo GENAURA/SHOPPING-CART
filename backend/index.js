@@ -1,6 +1,6 @@
 import express from 'express'
 import dotenv from 'dotenv'
-dotenv.config() // ⚠️ move this to the TOP before any other imports
+dotenv.config()
 import connectDb from './config/db.js'
 import cookieParser from 'cookie-parser'
 import cors from "cors"
@@ -17,15 +17,18 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
   origin: [
-    'http://localhost:5173',   // frontend dev
-    'http://localhost:5174',   // admin dev
-    'https://shopping-cart-frontendone.onrender.com',  // old frontend
-    'https://shopping-cart-admin.onrender.com',        // old admin
-    'https://shopping-cart-black-omega.vercel.app',    // new frontend on Vercel
-    // add your admin Vercel URL here after deploying admin
+    'http://localhost:5173',
+    'http://localhost:5174',
+    'https://shopping-cart-frontendone.onrender.com',
+    'https://shopping-cart-admin.onrender.com',
+    'https://shopping-cart-black-omega.vercel.app',
   ],
   credentials: true
 }))
+
+app.get('/', (req, res) => {
+  res.json({ message: '🚀 API is running!' })
+})
 
 app.use("/api/auth", authRoutes)
 app.use("/api/user", userRoutes)
